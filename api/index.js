@@ -2,8 +2,6 @@ const express = require('express');
 const qr = require('qr-image');
 const bodyParser = require('body-parser');
 const cloudinary = require('../cloudinaryConfig'); 
-// import { SpeedInsights } from "@vercel/speed-insights/next"
-const SpeedInsights = require('@vercel/speed-insights/next')
 const app = express();
 const port = 3000;
 
