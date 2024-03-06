@@ -1,7 +1,7 @@
 const express = require('express');
 const qr = require('qr-image');
 const bodyParser = require('body-parser');
-const cloudinary = require('./cloudinaryConfig'); // Ensure this file exports your configured Cloudinary instance
+const cloudinary = require('../cloudinaryConfig'); // Ensure this file exports your configured Cloudinary instance
 
 const app = express();
 const port = 3000;
