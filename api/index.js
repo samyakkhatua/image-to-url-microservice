@@ -48,7 +48,7 @@ const sharp = require('sharp');
 const bodyParser = require('body-parser');
 const cloudinary = require('../cloudinaryConfig');
 const app = express();
-const port = 3000;
+const port = 8000;
 
 app.use(bodyParser.json());
 
