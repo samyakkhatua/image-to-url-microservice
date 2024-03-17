@@ -64,7 +64,7 @@ app.post('/generate-qr', async (req, res) => {
     const qrCodeBuffer = qr.imageSync(uniqueID, { type: 'png' });
 
     // Load your event ticket template (Ensure the path is correct)
-    const ticketTemplatePath = './event-ticket-template.png';
+    const ticketTemplatePath = '../event-ticket-template.png';
     const ticketWithQRCode = await sharp(ticketTemplatePath)
       // Ensure you adjust these values to position the QR code correctly on your template
       .composite([{ input: qrCodeBuffer, left: 1580, top: 100 }])
